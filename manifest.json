@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "FBO HI BRO",
+    "version": "1.0",
+    "description": "Your extension description",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        
+      {
+        "matches": ["*://www.facebook.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/IMG/ICON.png",
+        "48": "/IMG/ICON.png",
+        "128": "/IMG/ICON.png"
+      }
+    }
+  }
+  
